@@ -1,0 +1,71 @@
+.shirt-image-container {
+    padding: 2px; /* Further reduce padding */
+    background-color: white;
+    border-radius: 8px; /* Further decrease border radius */
+    margin: 0;
+}
+
+.shirt-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.shirt-info > h3 {
+    color: white;
+    font-size: 1rem; /* Further reduce font size */
+}
+
+.carddetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px; /* Further reduce padding */
+}
+
+.shirt-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shirt-card {
+    background-color: rgb(29, 29, 29);
+    padding: 12px; /* Further reduce padding */
+    
+}
+
+.add-to-cart-btn {
+    color: white;
+    padding: 1px 4px; /* Further reduce padding */
+    background-color: rgb(7, 189, 7);
+    border: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 1rem; /* Further reduce font size */
+    border-radius: 15px; /* Further decrease border radius */
+    height: 20px; /* Further reduce height */
+    line-height: 1.1; /* Adjust line height */
+    outline: none; /* Removes the default focus style */
+}
+.add-to-cart-btn:hover{
+    background-color: rgb(0, 128, 0);
+    cursor: pointer;
+}
+
+.preview-btn {
+    background-color: rgb(255, 133, 52);
+    color: white;
+    font-size: 0.9rem; /* Further reduce font size */
+    padding: 3px; /* Further reduce padding */
+    border: none;
+    font-family: "Kanit", sans-serif;
+    border-radius: 15px; /* Further decrease border radius */
+}
+
+.preview-btn:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+
+}

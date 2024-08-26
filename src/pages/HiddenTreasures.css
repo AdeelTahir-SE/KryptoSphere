@@ -1,0 +1,64 @@
+.hdtitle {
+    text-align: center;
+    color: orange;
+    font-family: "Kanit", sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: gray;
+    font-family: 'lexend', sans-serif;
+}
+
+.image > img {
+    max-width: 407px;
+    height: auto; /* Ensure the image maintains aspect ratio */
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: bolder;
+    font-family: "lexend", serif;
+}
+
+.whysolana {
+    color: rgb(235, 35, 0);
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    background: 
+        linear-gradient(to bottom, orange, transparent 60%, orange), /* Top to bottom gradient */
+        linear-gradient(to right, #8919da 0%, #8857ac 50%, orange 100%),
+        radial-gradient(#8919da, #8857ac);
+}
+
+.solanadetails {
+    font-family: 'lexend', sans-serif;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: white;
+}
+
+.whysolanadiv {
+    background-color: orange;
+box-sizing: border-box
+;}
+.svgclass{
+    display: flex;
+    margin-top: 3px;
+    flex-direction: column;
+    
+}
+.svgclass>svg{
+    margin-top: 3px;
+
+}
