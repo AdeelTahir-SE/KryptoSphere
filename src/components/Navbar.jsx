@@ -6,7 +6,7 @@ import "./Navbar.css";
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(true);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
