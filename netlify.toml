@@ -1,3 +1,17 @@
 [build]
-  publish = "dist"  
+  command = "npm run build"    # Command to build your project
+  publish = "dist"            # Directory where Vite outputs the built files
+
+[context.production.environment]
+  # Example environment variables if needed
+  NODE_ENV = "production"
+
+[context.deploy-preview]
+  # Configuration for deploy previews
   command = "npm run build"
+  publish = "dist"
+
+[context.branch-deploy]
+  # Configuration for branch deploys
+  command = "npm run build"
+  publish = "dist"
