@@ -19,7 +19,7 @@
 }
 
 .shirt-image:hover {
-    transform: rotate(180deg); /* Rotate image on hover */
+    transform: rotate(50deg); /* Rotate image on hover */
 }
 
 .carddetails {

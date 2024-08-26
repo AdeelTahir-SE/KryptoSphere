@@ -1,5 +1,6 @@
 import backgroundinfo from "../assets/backgroundinfo.png"
 import "./Welcome.css"
+import animationGif from "../assets/animation.gif"; 
 export default function Welcome(){
     return(<div className="welcomepage">
         <div className="uppercontainer">
@@ -12,7 +13,7 @@ export default function Welcome(){
 <button onClick={(e)=>{}}>get stated</button>
             </div>
             <div className="animation">
-<h1>ANIMATION</h1>
+            <img src={animationGif} alt="Animation" /> 
             </div>
             
             </div >
