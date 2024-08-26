@@ -1,71 +1,84 @@
+.shirt-card {
+    background-color: rgb(29, 29, 29); /* Dark background color for the card */
+    padding: 12px; /* Reduced padding around the card content */
+    border-radius: 8px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual */
+}
+
 .shirt-image-container {
-    padding: 2px; /* Further reduce padding */
-    background-color: white;
-    border-radius: 8px; /* Further decrease border radius */
-    margin: 0;
+    padding: 2px; /* Padding around the image */
+    background-color: white; /* Background color behind the image */
+    border-radius: 8px; /* Rounded corners for the image container */
+    margin: 0; /* Remove margin around the image container */
+    overflow: hidden; /* Ensure image doesn't overflow container */
 }
 
-.shirt-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
+.shirt-image {
+    display: block; /* Ensure image is a block-level element */
+    transition: transform 0.5s ease; /* Smooth rotation effect */
 }
 
-.shirt-info > h3 {
-    color: white;
-    font-size: 1rem; /* Further reduce font size */
+.shirt-image:hover {
+    transform: rotate(60deg); /* Rotate image on hover */
 }
 
 .carddetails {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2px; /* Further reduce padding */
+    padding: 2px; /* Reduced padding for card details */
+}
+
+.shirt-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white; /* Text color for shirt info */
+}
+
+.shirt-info > h3 {
+    color: white; /* Text color for shirt number */
+    font-size: 1rem; /* Reduced font size */
 }
 
 .shirt-footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-}
-
-.shirt-card {
-    background-color: rgb(29, 29, 29);
-    padding: 12px; /* Further reduce padding */
-    
+    align-items: center; /* Center align footer items */
 }
 
 .add-to-cart-btn {
     color: white;
-    padding: 1px 4px; /* Further reduce padding */
-    background-color: rgb(7, 189, 7);
-    border: none;
-    font-family: "Kanit", sans-serif;
-    font-size: 1rem; /* Further reduce font size */
-    border-radius: 15px; /* Further decrease border radius */
-    height: 20px; /* Further reduce height */
+    padding: 1px 4px; /* Reduced padding for button */
+    background-color: rgb(7, 189, 7); /* Green background */
+    border: none; /* Remove default border */
+    font-family: "Kanit", sans-serif; /* Font for button text */
+    font-size: 1rem; /* Reduced font size */
+    border-radius: 15px; /* Rounded corners */
+    height: 20px; /* Reduced height */
     line-height: 1.1; /* Adjust line height */
-    outline: none; /* Removes the default focus style */
+    outline: none; /* Remove default focus outline */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
 }
-.add-to-cart-btn:hover{
-    background-color: rgb(0, 128, 0);
-    cursor: pointer;
+
+.add-to-cart-btn:hover {
+    background-color: rgb(0, 128, 0); /* Darker green on hover */
 }
 
 .preview-btn {
-    background-color: rgb(255, 133, 52);
-    color: white;
-    font-size: 0.9rem; /* Further reduce font size */
-    padding: 3px; /* Further reduce padding */
-    border: none;
-    font-family: "Kanit", sans-serif;
-    border-radius: 15px; /* Further decrease border radius */
+    background-color: rgb(255, 133, 52); /* Orange background */
+    color: white; /* Text color for button */
+    font-size: 0.9rem; /* Further reduced font size */
+    padding: 3px; /* Further reduced padding */
+    border: none; /* Remove default border */
+    font-family: "Kanit", sans-serif; /* Font for button text */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
 }
 
-.preview-btn:hover{
-    background-color: rgb(255, 0, 0);
-    cursor: pointer;
-
+.preview-btn:hover {
+    background-color: rgb(255, 0, 0); /* Red background on hover */
 }

@@ -1,7 +1,7 @@
 /* Base styles for the nav container */
 nav {
     background-color: rgb(255, 187, 0); /* Background color for the nav */
-    
+    position: relative;
     display: flex; /* Use flexbox for layout */
     flex-direction: row; /* Arrange items in a row */
     justify-content: space-between; /* Space between logo and icons */
@@ -12,6 +12,36 @@ nav {
     filter:drop-shadow( 0 0px 17px rgba(0, 0, 0, 0.75)); /* Add a more pronounced shadow effect */
 
 
+}
+.dropdown {
+position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 30px; /* Adjust as needed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000 ; 
+    padding: 32px;
+
+    padding-right: 55px;
+   width: 80px;
+    width: 150px; /* Adjust as needed */
+}
+.dropdown > ul > li {
+    text-align: left;
+    font-size: small;
+    padding: 8px 12px; /* Add padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Add a separator line */
+}
+@media screen and (min-width: 768px) {
+    .dropdown > ul > li {
+        font-size: medium; /* Increase font size for larger screens */
+    }
+}
+
+
+.dropdown > ul > li:last-child {
+    border-bottom: none; /* Remove border from the last item */
 }
 
 /* Styles for the logo container */

@@ -1,18 +1,44 @@
-import logoupworkedited from "../assets/logoupworkedited.png"
-import cart from"../assets/cart.png"
-import hamburger from "../assets/hamburger.png"
-import "./Navbar.css"
-export default function Navbar(){
-    return(
-    <nav>
-       
-        <ul className="logo">
-            <li><img src={logoupworkedited} alt="logo" /></li>
-        </ul>
-        <ul className="icons">
-            <li><img src={cart} alt=""  /></li>
-            <li><img src={hamburger} alt="" /></li>
-        </ul>
-    </nav>
+import React, { useState } from 'react';
+import logoupworkedited from "../assets/logoupworkedited.png";
+import cart from "../assets/cart.png";
+import hamburger from "../assets/hamburger.png";
+import "./Navbar.css";
+import { Link } from 'react-router-dom';
+
+export default function Navbar() {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(true);
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
+    return (
+        <nav>
+            <ul className="logo">
+                <li><img src={logoupworkedited} alt="logo" /></li>
+            </ul>
+            <ul className="icons">
+                <li><img src={cart} alt="cart" /></li>
+                <li>
+                    <img 
+                        src={hamburger} 
+                        alt="hamburger" 
+                        onClick={toggleDropdown} 
+                    />
+                    {isDropdownOpen && (
+                        <div className="dropdown">
+                            <ul>
+                                <li><Link to="/upworkpagesproject/Welcome">Welcome</Link></li>
+                                <li><Link to="/upworkpagesproject/HiddenTreasures">HiddenTreasures</Link></li>
+                                <li><Link to="/upworkpagesproject/HolderRewards">HolderRewarrds</Link></li>
+                                <li><Link to="/upworkpagesproject/Products">Products</Link></li>
+                                <li><Link to="/upworkpagesproject/Contact">Contact</Link></li>
+
+                            </ul>
+                        </div>
+                    )}
+                </li>
+            </ul>
+        </nav>
     );
 }

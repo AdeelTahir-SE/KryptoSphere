@@ -54,7 +54,7 @@ box-sizing: border-box
 ;}
 .svgclass{
     display: flex;
-    margin-top: 3px;
+    margin-top: 5px;
     flex-direction: column;
     
 }
