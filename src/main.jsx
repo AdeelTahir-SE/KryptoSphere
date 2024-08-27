@@ -12,7 +12,7 @@ import Contact from "./pages/Contact.jsx"
 const router = createBrowserRouter([
 
   {
-    path: "/upworkpagesproject/HiddenTreasures",
+    path: "/HiddenTreasures",
     element: (
       <>
         <Navbar />
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/upworkpagesproject/HolderRewards",
+    path: "/HolderRewards",
     element: (
       <>
         <Navbar />
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/upworkpagesproject/Contact",
+    path: "/Contact",
     element: (
       <>
         <Navbar />
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/upworkpagesproject/Welcome",
+    path: "/Welcome",
     element: (
       <>
         <Navbar />
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/upworkpagesproject/",
+    path: "/",
     element: (
       <>
         <Navbar />
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/upworkpagesproject/Products",
+    path: "/Products",
     element: (
       <>
         <Navbar />

@@ -28,11 +28,11 @@ export default function Navbar() {
                     {isDropdownOpen && (
                         <div className="dropdown">
                             <ul>
-                                <li><Link to="/upworkpagesproject/Welcome">Welcome</Link></li>
-                                <li><Link to="/upworkpagesproject/HiddenTreasures">HiddenTreasures</Link></li>
-                                <li><Link to="/upworkpagesproject/HolderRewards">HolderRewarrds</Link></li>
-                                <li><Link to="/upworkpagesproject/Products">Products</Link></li>
-                                <li><Link to="/upworkpagesproject/Contact">Contact</Link></li>
+                                <li><Link to="/Welcome">Welcome</Link></li>
+                                <li><Link to="/HiddenTreasures">HiddenTreasures</Link></li>
+                                <li><Link to="/HolderRewards">HolderRewarrds</Link></li>
+                                <li><Link to="/Products">Products</Link></li>
+                                <li><Link to="/Contact">Contact</Link></li>
 
                             </ul>
                         </div>
