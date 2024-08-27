@@ -8,7 +8,6 @@ export default function ShirtCard({ src, number ,addtocart,preview }) {
             <div className="carddetails">
             <div className="shirt-info">
                     <h3 className="shirt-number">{number}</h3>
-                <span className="shirt-price">$100</span>
 
             </div>
             <div className="shirt-footer">

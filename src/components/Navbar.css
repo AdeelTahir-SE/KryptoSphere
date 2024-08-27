@@ -37,28 +37,19 @@ nav {
     pointer-events: auto; /* Enable clicks when visible */
 }
 
-.dropdown > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.dropdown > ul > li {
+/* Styles for dropdown items */
+.dropdown-item {
+    display: block; /* Make each link a block element */
     text-align: left;
     font-size: medium; /* Increase font size */
-    list-style: none;
     padding: 10px 14px; /* Add padding for better spacing */
-    border-bottom: 1px solid #ddd;
-    color: #333; /* Darker text color for better readability */
+    color: #000000; /* Darker text color for better readability */
+    text-decoration: none; /* Remove underline */
     transition: background-color 0.2s ease; /* Smooth background color transition */
 }
 
-.dropdown > ul > li:hover {
+.dropdown-item:hover {
     background-color: #f5f5f5; /* Light grey background on hover */
-}
-
-.dropdown > ul > li:last-child {
-    border-bottom: none;
 }
 
 /* Styles for the logo container */

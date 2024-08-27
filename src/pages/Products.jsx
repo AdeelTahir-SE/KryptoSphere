@@ -21,7 +21,7 @@ export default function Products() {
     };
 
     // Set the number of times to repeat the products
-    const repeatedProducts = repeatProducts(initialProducts, 25); // Adjust the number to repeat as needed
+    const repeatedProducts = repeatProducts(initialProducts, 15); // Adjust the number to repeat as needed
 
     return (
         <div className="products">
