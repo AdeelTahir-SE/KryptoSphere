@@ -1,116 +1,125 @@
 /* Base styles for the nav container */
 nav {
-    background-color: rgb(255, 187, 0); /* Background color for the nav */
+    background-color: rgb(255, 187, 0);
     position: relative;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: row; /* Arrange items in a row */
-    justify-content: space-between; /* Space between logo and icons */
-    align-items: center; /* Center items vertically */
-    padding: 10px 20px; /* Add some padding */
-    width: 100%; /* Full width of the parent container */
-    box-sizing: border-box; /* Ensure padding is included in width */
-    filter:drop-shadow( 0 0px 17px rgba(0, 0, 0, 0.75)); /* Add a more pronounced shadow effect */
-
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    filter: drop-shadow(0 0px 17px rgba(0, 0, 0, 0.75));
 }
+
+/* Styles for the dropdown menu */
 .dropdown {
-position: absolute;
-    top: 60px; /* Adjust as needed */
-    right: 30px; /* Adjust as needed */
+    position: absolute;
+    top: 60px;
+    right: 30px;
     background-color: #fff;
+    border-radius: 8px; /* Add rounded corners */
     border: 1px solid #ddd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000 ; 
-    padding: 32px;
-
-    padding-right: 55px;
-   width: 80px;
-    width: 150px; /* Adjust as needed */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    z-index: 1000;
+    padding: 16px; /* Adjust padding for a cleaner look */
+    width: 200px; /* Increase width slightly */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for opacity and position */
+    pointer-events: none; /* Prevent clicks when not visible */
 }
+
+/* Dropdown visible state */
+.dropdown.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* Enable clicks when visible */
+}
+
+.dropdown > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .dropdown > ul > li {
     text-align: left;
-    font-size: small;
-    padding: 8px 12px; /* Add padding for better spacing */
-    border-bottom: 1px solid #ddd; /* Add a separator line */
-}
-@media screen and (min-width: 768px) {
-    .dropdown > ul > li {
-        font-size: medium; /* Increase font size for larger screens */
-    }
+    font-size: medium; /* Increase font size */
+    list-style: none;
+    padding: 10px 14px; /* Add padding for better spacing */
+    border-bottom: 1px solid #ddd;
+    color: #333; /* Darker text color for better readability */
+    transition: background-color 0.2s ease; /* Smooth background color transition */
 }
 
+.dropdown > ul > li:hover {
+    background-color: #f5f5f5; /* Light grey background on hover */
+}
 
 .dropdown > ul > li:last-child {
-    border-bottom: none; /* Remove border from the last item */
+    border-bottom: none;
 }
 
 /* Styles for the logo container */
 .logo {
-    list-style: none; /* Remove default list styling */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Styles for each logo list item */
 .logo > li {
-    display: flex; /* Flexbox to align items */
+    display: flex;
+    justify-content: left;
+}
+
+.logo > li > a > img {
+    width: auto;
+    height: 60px;
+}
+
+.logo > li > a > img:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 251, 0));
+    cursor: pointer;
 }
 
 /* Styles for the icons container */
 .icons {
-    list-style: none; /* Remove default list styling */
-    display: flex; /* Use flexbox for layout */
+    list-style: none;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-end; /* Align icons to the right */
-    align-items: center; /* Center items vertically */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Styles for each icon list item */
 .icons > li {
     display: flex;
     flex-direction: row;
-    justify-content: right; /* Flexbox to align items */
-    margin-left: 30px; /* Add some space between the icons */
+    justify-content: right;
+    margin-left: 30px;
 }
-.logo > li{
-    display: flex;
-    justify-content: left;
+
+.icons > li > img {
+    width: auto;
+    height: 30px;
 }
-/* Styles for the logo image */
-.logo > li > img {
-    width: auto; /* Keep aspect ratio of the image */
-    height: 60px; /* Set height of the logo */
-}
-.logo > li > img:hover {
-    filter: drop-shadow(0 0 10px rgb(255, 251, 0)); /* Corrected rgb syntax */
-    cursor: pointer;
-}
-.icons > li > img:hover{
+
+.icons > li > img:hover {
     filter: invert(0.8);
     cursor: pointer;
-} 
-/* Styles for the icon images */
-.icons > li > img {
-    width: auto; /* Keep aspect ratio of the image */
-    height: 30px; /* Set height of the icons */
 }
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-   
-
-
-   
-
-    .logo > li > img {
-        height: 40px; /* Reduce the logo size */
+    .logo > li > a > img {
+        height: 40px;
     }
 
     .icons > li > img {
-        height: 20px; /* Reduce the icon size */
+        height: 20px;
     }
 }
